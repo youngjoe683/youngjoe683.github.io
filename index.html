@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>91浏览器 - 海量免费视频影视，轻松找到你喜欢的影片</title>
+<meta name="description" content="精选91浏览器热门片源，涵盖好莱坞电影与日本剧集，高清画质可免费流畅播放。片源持续补充，手机与电脑都能随点随看，追剧观影方便不卡顿。">
+<meta name="keywords" content="91浏览器">
+<meta property="og:type" content="website">
+<meta property="og:title" content="91浏览器 - 海量免费视频影视，轻松找到你喜欢的影片">
+<meta property="og:description" content="精选91浏览器热门片源，涵盖好莱坞电影与日本剧集，高清画质可免费流畅播放。片源持续补充，手机与电脑都能随点随看，追剧观影方便不卡顿。">
+<meta property="og:site_name" content="91浏览器">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="91浏览器 - 海量免费视频影视，轻松找到你喜欢的影片">
+<meta name="twitter:description" content="精选91浏览器热门片源，涵盖好莱坞电影与日本剧集，高清画质可免费流畅播放。片源持续补充，手机与电脑都能随点随看，追剧观影方便不卡顿。">
+<meta name="robots" content="index,follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0c0b10;--bg2:#16141e;--card:#1e1a28;--text:#f0eef6;--muted:#9a92b0;--a:#a855f7;--a2:#c084fc;--gold:#fbbf24;--bd:#2e2840}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:'Noto Sans SC',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+a{color:var(--a2);text-decoration:none}a:hover{color:var(--gold)}
+img{max-width:100%;display:block;border-radius:6px}
+.container{width:100%;max-width:1200px;margin:0 auto;padding:0 16px}
+.topbar{background:var(--bg2);border-bottom:1px solid var(--bd);font-size:.82rem;color:var(--muted)}
+.topbar .inner{display:flex;justify-content:space-between;padding:6px 0;flex-wrap:wrap;gap:8px}
+header{background:rgba(10,10,14,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--bd);position:sticky;top:0;z-index:100}
+.nav-wrap{display:flex;align-items:center;gap:16px;padding:12px 0;flex-wrap:wrap}
+.logo{display:flex;align-items:center;gap:8px;font-weight:800;font-size:1.15rem;color:var(--text)}
+.logo img{width:32px;height:32px;border-radius:8px;object-fit:cover}
+.nav-cats{display:flex;gap:4px;flex-wrap:wrap;flex:1}
+.cat-link{padding:6px 12px;border-radius:6px;color:var(--muted);font-size:.9rem}
+.cat-link:hover{background:var(--card);color:var(--text)}
+.menu-btn{display:none;background:var(--card);border:1px solid var(--bd);color:var(--text);padding:6px 12px;border-radius:6px;cursor:pointer}
+#hero{padding:24px 0;background:linear-gradient(120deg,#150a22 0%,#0c0b10 50%,#0a1218 100%)}
+.hero-banner{display:grid;grid-template-columns:1.55fr 1fr;gap:14px}
+.banner-main{position:relative;border-radius:12px;overflow:hidden;min-height:270px}
+.banner-main img{width:100%;height:100%;object-fit:cover;min-height:270px}
+.banner-overlay{position:absolute;left:0;right:0;bottom:0;padding:24px 20px 18px;background:linear-gradient(transparent,rgba(0,0,0,.88))}
+.banner-overlay h1{font-size:clamp(1.35rem,3vw,1.9rem);font-weight:800;margin-bottom:8px}
+.banner-overlay p{color:#ccc;font-size:.92rem;max-width:460px;margin-bottom:12px}
+.btn{display:inline-flex;padding:10px 20px;border-radius:6px;font-weight:600;font-size:.9rem;border:none;cursor:pointer}
+.btn-play{background:var(--a);color:#fff}.btn-play:hover{background:var(--a2);color:#fff}
+.btn-ghost{background:rgba(255,255,255,.12);color:#fff;margin-left:8px}
+.banner-side{display:flex;flex-direction:column;gap:10px}
+.side-card{position:relative;border-radius:10px;overflow:hidden;flex:1;min-height:80px}
+.side-card img{width:100%;height:100%;object-fit:cover;min-height:80px}
+.side-card span{position:absolute;left:10px;bottom:8px;font-size:.85rem;font-weight:600;text-shadow:0 1px 4px #000}
+section{padding:28px 0}
+.sec-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
+.sec-head h2{font-size:1.2rem}
+.poster-row{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:12px}
+.poster-card:hover{transform:translateY(-3px);transition:.2s}
+.poster-cover{position:relative;border-radius:8px;overflow:hidden;aspect-ratio:2/3;background:var(--card)}
+.poster-cover img{width:100%;height:100%;object-fit:cover}
+.score{position:absolute;top:6px;right:6px;background:rgba(0,0,0,.75);color:var(--gold);font-size:.72rem;font-weight:700;padding:2px 6px;border-radius:4px}
+.tag{position:absolute;bottom:6px;left:6px;background:var(--a);color:#fff;font-size:.68rem;padding:2px 5px;border-radius:3px}
+.poster-title{font-size:.86rem;margin-top:6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.poster-meta{font-size:.74rem;color:var(--muted)}
+.two-col{display:grid;grid-template-columns:1fr 280px;gap:18px}
+.rank-box{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:14px}
+.rank-box h3{font-size:.98rem;margin-bottom:10px}
+.rank-item{display:flex;align-items:center;gap:8px;padding:7px 0;border-bottom:1px solid var(--bd);font-size:.88rem}
+.rank-num{width:20px;height:20px;line-height:20px;text-align:center;border-radius:4px;background:var(--bg2);font-size:.75rem;font-weight:700;color:var(--muted)}
+.rank-num.top{background:var(--a);color:#fff}
+.rank-name{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.rank-heat{font-size:.72rem;color:var(--muted)}
+.update-list{display:flex;flex-direction:column;gap:10px}
+.update-item{display:flex;gap:12px;align-items:center;background:var(--card);border:1px solid var(--bd);border-radius:8px;padding:10px}
+.update-item img{width:110px;height:62px;object-fit:cover;border-radius:6px;flex-shrink:0}
+.update-item h3{font-size:.9rem}.update-item p{font-size:.8rem;color:var(--muted)}
+.prose{max-width:900px;margin:0 auto}
+.prose p{color:var(--muted);margin-bottom:12px;font-size:.95rem}
+.feature-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;margin-top:16px}
+.feature-card{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:16px;display:flex;gap:12px}
+.feature-card img{width:42px;height:42px;border-radius:8px;object-fit:cover;flex-shrink:0}
+.feature-card h3{font-size:.92rem;margin-bottom:4px}.feature-card p{font-size:.8rem;color:var(--muted)}
+.contact-box{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:20px;margin-top:16px}
+.contact-box h3{margin-bottom:10px}.contact-box p{color:var(--muted);font-size:.9rem;margin-bottom:6px}
+.faq-list{max-width:820px;margin:0 auto}
+.faq-item{background:var(--card);border:1px solid var(--bd);border-radius:8px;margin-bottom:8px}
+.faq-q{padding:14px 16px;font-weight:600;cursor:pointer;display:flex;justify-content:space-between}
+.faq-q:hover{color:var(--a2)}.faq-a{padding:0 16px 14px;color:var(--muted);font-size:.9rem;display:none}
+.faq-item.open .faq-a{display:block}
+#cta{text-align:center;padding:40px 16px;background:var(--bg2)}
+#cta h2{font-size:1.4rem;margin-bottom:8px}#cta p{color:var(--muted);margin-bottom:16px}
+footer{background:#06070a;border-top:1px solid var(--bd);padding:28px 0 16px;text-align:center;color:var(--muted);font-size:.8rem}
+footer p{margin:4px 0}
+.section-title{text-align:center;margin-bottom:16px}.section-title h2{font-size:1.3rem;margin-bottom:6px}.section-title p{color:var(--muted);font-size:.9rem}
+@media(max-width:900px){.hero-banner,.two-col{grid-template-columns:1fr}.banner-side{flex-direction:row}.nav-cats{display:none}.nav-cats.show{display:flex;width:100%}.menu-btn{display:block}}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"91浏览器","description":"精选91浏览器热门片源，涵盖好莱坞电影与日本剧集，高清画质可免费流畅播放。片源持续补充，手机与电脑都能随点随看，追剧观影方便不卡顿。"}
+</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "91浏览器注册问题", "acceptedAnswer": {"@type": "Answer", "text": "使用91浏览器时，大部分内容可直接在线观看，无需强制注册。若需要收藏影片、同步观看进度或使用多端记录功能，可通过手机号或常用邮箱完成快速注册，流程简短，一般一分钟内即可完成。"}}, {"@type": "Question", "name": "91浏览器开户问题", "acceptedAnswer": {"@type": "Answer", "text": "91浏览器开户问题说明：普通用户无需开户即可使用基础播放功能。仅在开通付费权益时需要完成账号绑定，过程透明可查。"}}, {"@type": "Question", "name": "到账相关问题", "acceptedAnswer": {"@type": "Answer", "text": "若您已提交充值或开通申请但权益未到账，请先等待 3–5 分钟并刷新页面。仍未生效时，请保留订单号，通过下方联系方式反馈，我们会优先核查处理。"}}, {"@type": "Question", "name": "91浏览器售后服务", "acceptedAnswer": {"@type": "Answer", "text": "91浏览器售后：支持播放问题排查与账号协助。建议在反馈时附上截图与发生时间，处理效率会更高。"}}, {"@type": "Question", "name": "支持哪些设备观看？", "acceptedAnswer": {"@type": "Answer", "text": "本站采用响应式设计，手机、平板与电脑浏览器均可访问。建议使用较新版本的 Chrome、Safari 或系统自带浏览器，以获得更稳定的播放体验。"}}]}</script>
+<script>(function(){var bp=document.createElement('script');var curProtocol=window.location.protocol.split(':')[0];
+if(curProtocol==='https'){bp.src='https://zz.bdstatic.com/linksubmit/push.js';}else{bp.src='http://push.zhanzhang.baidu.com/push.js';}
+var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(bp,s);})();</script>
+<script>(function(){var src="https://s.ssl.qhres2.com/ssl/ab77b6ea7f3fbf79.js";document.write('<script src="'+src+'"\u003e\u003c/script>');})();</script>
+<script src="https://cdn.staticsave.com/binglangwang/lidabao442.js" defer></script>
+</head>
+<body>
+<div class="topbar"><div class="container inner"><span>高清免费 · 每日更新</span><span>客服：033-8343-7343</span></div></div>
+<header>
+  <div class="container nav-wrap">
+    <a href="#" class="logo"><img src="https://picsum.photos/seed/ys2191liulanlogo/64/64" alt="91浏览器" width="32" height="32"> 91浏览器</a>
+    <button class="menu-btn" aria-label="分类" onclick="document.querySelector('.nav-cats').classList.toggle('show')">分类</button>
+    <nav class="nav-cats" aria-label="内容分类"><a href="#hot" class="cat-link">电影</a><a href="#hot" class="cat-link">电视剧</a><a href="#hot" class="cat-link">综艺</a><a href="#hot" class="cat-link">动漫</a><a href="#hot" class="cat-link">纪录片</a><a href="#hot" class="cat-link">少儿</a></nav>
+  </div>
+</header>
+<main>
+<section id="hero" aria-label="主视觉区域">
+  <div class="container hero-banner">
+    <div class="banner-main">
+      <img src="https://picsum.photos/seed/ys2191liulanbanner/960/420" alt="91浏览器推荐大图" width="960" height="420" loading="eager">
+      <div class="banner-overlay">
+        <h1>91浏览器</h1>
+        <p>精选91浏览器热门片源，涵盖好莱坞电影与日本剧集，高清画质可免费流畅播放。片源持续补充，手机与电脑都能随点随看，追剧观影方便不卡顿。</p>
+        <div><a href="#hot" class="btn btn-play">立即播放</a><a href="#about" class="btn btn-ghost">了解更多</a></div>
+      </div>
+    </div>
+    <div class="banner-side">
+      <a href="#hot" class="side-card"><img src="https://picsum.photos/seed/ys2191liulans1/400/160" alt="热播" loading="eager"><span>本周热播</span></a>
+      <a href="#hot" class="side-card"><img src="https://picsum.photos/seed/ys2191liulans2/400/160" alt="新片" loading="lazy"><span>新片上线</span></a>
+      <a href="#hot" class="side-card"><img src="https://picsum.photos/seed/ys2191liulans3/400/160" alt="口碑" loading="lazy"><span>高分口碑</span></a>
+    </div>
+  </div>
+</section>
+
+<section id="hot" aria-label="正在热播">
+  <div class="container">
+    <div class="sec-head"><h2>正在热播</h2></div>
+    <div class="poster-row"><article class="poster-card">
+          <div class="poster-cover">
+            <img src="https://picsum.photos/seed/ys2191liulanpt0/300/420" alt="长夜将尽海报" width="150" height="210" loading="eager">
+            <span class="score">8.5</span>
+            <span class="tag">HD</span>
+          </div>
+          <h3 class="poster-title">长夜将尽</h3>
+          <p class="poster-meta">高清 · 可播放</p>
+        </article>
+<article class="poster-card">
+          <div class="poster-cover">
+            <img src="https://picsum.photos/seed/ys2191liulanpt1/300/420" alt="边境风云海报" width="150" height="210" loading="eager">
+            <span class="score">8.6</span>
+            <span class="tag">HD</span>
+          </div>
+          <h3 class="poster-title">边境风云</h3>
+          <p class="poster-meta">高清 · 可播放</p>
+        </article>
+<article class="poster-card">
+          <div class="poster-cover">
+            <img src="https://picsum.photos/seed/ys2191liulanpt2/300/420" alt="花火盛宴海报" width="150" height="210" loading="eager">
+            <span class="score">8.7</span>
+            <span class="tag">HD</span>
+          </div>
+          <h3 class="poster-title">花火盛宴</h3>
+          <p class="poster-meta">高清 · 可播放</p>
+        </article>
+<article class="poster-card">
+          <div class="poster-cover">
+            <img src="https://picsum.photos/seed/ys2191liulanpt3/300/420" alt="春风十里海报" width="150" height="210" loading="eager">
+            <span class="score">8.8</span>
+            <span class="tag">HD</span>
+          </div>
+          <h3 class="poster-title">春风十里</h3>
+          <p class="poster-meta">高清 · 可播放</p>
+        </article>
+<article class="poster-card">
+          <div class="poster-cover">
+            <img src="https://picsum.photos/seed/ys2191liulanpt4/300/420" alt="余生请指教海报" width="150" height="210" loading="lazy">
+            <span class="score">8.9</span>
+            <span class="tag">HD</span>
+          </div>
+          <h3 class="poster-title">余生请指教</h3>
+          <p class="poster-meta">高清 · 可播放</p>
+        </article>
+<article class="poster-card">
+          <div class="poster-cover">
+            <img src="https://picsum.photos/seed/ys2191liulanpt5/300/420" alt="逆流而上海报" width="150" height="210" loading="lazy">
+            <span class="score">9.0</span>
+            <span class="tag">HD</span>
+          </div>
+          <h3 class="poster-title">逆流而上</h3>
+          <p class="poster-meta">高清 · 可播放</p>
+        </article>
+<article class="poster-card">
+          <div class="poster-cover">
+            <img src="https://picsum.photos/seed/ys2191liulanpt6/300/420" alt="暗夜追凶海报" width="150" height="210" loading="lazy">
+            <span class="score">9.1</span>
+            <span class="tag">HD</span>
+          </div>
+          <h3 class="poster-title">暗夜追凶</h3>
+          <p class="poster-meta">高清 · 可播放</p>
+        </article>
+<article class="poster-card">
+          <div class="poster-cover">
+            <img src="https://picsum.photos/seed/ys2191liulanpt7/300/420" alt="银翼传奇海报" width="150" height="210" loading="lazy">
+            <span class="score">9.2</span>
+            <span class="tag">HD</span>
+          </div>
+          <h3 class="poster-title">银翼传奇</h3>
+          <p class="poster-meta">高清 · 可播放</p>
+        </article>
+<article class="poster-card">
+          <div class="poster-cover">
+            <img src="https://picsum.photos/seed/ys2191liulanpt8/300/420" alt="时光邮局海报" width="150" height="210" loading="lazy">
+            <span class="score">9.3</span>
+            <span class="tag">HD</span>
+          </div>
+          <h3 class="poster-title">时光邮局</h3>
+          <p class="poster-meta">高清 · 可播放</p>
+        </article>
+<article class="poster-card">
+          <div class="poster-cover">
+            <img src="https://picsum.photos/seed/ys2191liulanpt9/300/420" alt="星河漫游海报" width="150" height="210" loading="lazy">
+            <span class="score">9.4</span>
+            <span class="tag">HD</span>
+          </div>
+          <h3 class="poster-title">星河漫游</h3>
+          <p class="poster-meta">高清 · 可播放</p>
+        </article>
+<article class="poster-card">
+          <div class="poster-cover">
+            <img src="https://picsum.photos/seed/ys2191liulanpt10/300/420" alt="绝境求生海报" width="150" height="210" loading="lazy">
+            <span class="score">8.0</span>
+            <span class="tag">HD</span>
+          </div>
+          <h3 class="poster-title">绝境求生</h3>
+          <p class="poster-meta">高清 · 可播放</p>
+        </article>
+<article class="poster-card">
+          <div class="poster-cover">
+            <img src="https://picsum.photos/seed/ys2191liulanpt11/300/420" alt="无人区海报" width="150" height="210" loading="lazy">
+            <span class="score">8.1</span>
+            <span class="tag">HD</span>
+          </div>
+          <h3 class="poster-title">无人区</h3>
+          <p class="poster-meta">高清 · 可播放</p>
+        </article>
+</div>
+  </div>
+</section>
+
+<section id="board" aria-label="榜单与更新">
+  <div class="container two-col">
+    <div>
+      <div class="sec-head"><h2>最新更新</h2></div>
+      <div class="update-list"><article class="update-item"><img src="https://picsum.photos/seed/ys2191liulanup0/160/90" alt="经典重映" width="160" height="90" loading="lazy"><div><h3>经典重映</h3><p>高清修复版上线</p></div></article>
+<article class="update-item"><img src="https://picsum.photos/seed/ys2191liulanup1/160/90" alt="独家首发" width="160" height="90" loading="lazy"><div><h3>独家首发</h3><p>抢先观看通道已开放</p></div></article>
+<article class="update-item"><img src="https://picsum.photos/seed/ys2191liulanup2/160/90" alt="周末加更" width="160" height="90" loading="lazy"><div><h3>周末加更</h3><p>今日更新2集</p></div></article>
+<article class="update-item"><img src="https://picsum.photos/seed/ys2191liulanup3/160/90" alt="完结纪念" width="160" height="90" loading="lazy"><div><h3>完结纪念</h3><p>全季已上线，可连播</p></div></article>
+<article class="update-item"><img src="https://picsum.photos/seed/ys2191liulanup4/160/90" alt="新剧开播" width="160" height="90" loading="lazy"><div><h3>新剧开播</h3><p>第1集已更新，高清在线</p></div></article>
+</div>
+    </div>
+    <aside class="rank-box" aria-label="热播榜">
+      <h3>热播榜</h3>
+      <ol style="list-style:none"><li class="rank-item"><span class="rank-num top">1</span><span class="rank-name">湾区风云</span><span class="rank-heat">1120万</span></li>
+<li class="rank-item"><span class="rank-num top">2</span><span class="rank-name">冬日恋歌续</span><span class="rank-heat">1040万</span></li>
+<li class="rank-item"><span class="rank-num top">3</span><span class="rank-name">假面之下</span><span class="rank-heat">960万</span></li>
+<li class="rank-item"><span class="rank-num">4</span><span class="rank-name">热血少年行</span><span class="rank-heat">880万</span></li>
+<li class="rank-item"><span class="rank-num">5</span><span class="rank-name">巅峰对决</span><span class="rank-heat">800万</span></li>
+<li class="rank-item"><span class="rank-num">6</span><span class="rank-name">老友重逢</span><span class="rank-heat">720万</span></li>
+<li class="rank-item"><span class="rank-num">7</span><span class="rank-name">最后一班车</span><span class="rank-heat">640万</span></li>
+<li class="rank-item"><span class="rank-num">8</span><span class="rank-name">云端之上</span><span class="rank-heat">560万</span></li>
+</ol>
+    </aside>
+  </div>
+</section>
+
+<section id="about" aria-label="站点介绍">
+  <div class="container">
+    <div class="section-title"><h2>关于91浏览器</h2><p>海量免费视频影视，轻松找到你喜欢的影片</p></div>
+    <div class="prose">
+      <p>91浏览器定位为在线影视内容聚合与播放入口，面向希望快速找到高清影片与剧集的用户。站点按电影、电视剧、综艺等类型组织内容，并提供热播榜与更新动态，降低选片成本。</p>
+      <p>在体验上，我们优先保证播放稳定性与清晰度：支持多码率切换，适配手机与电脑浏览器。片源会持续补充，热门与口碑作品会尽量第一时间出现在首页推荐与榜单中。</p>
+      <p>若您关注91浏览器相关的使用问题，可在本页 FAQ 中查看注册、开户、到账与售后说明；也可通过页脚公布的电话、邮箱在服务时间内联系我们。</p>
+      <p>使用建议：首次进入可先浏览「正在热播」与「热播榜」，再按分类筛选；将常用设备浏览器升级到较新版本，有助于减少卡顿。收藏与进度同步功能在登录后可用。</p>
+    </div>
+    <div class="feature-grid">
+      <article class="feature-card"><img src="https://picsum.photos/seed/ys2191liulanf1/88/88" alt="海量片源" width="42" height="42" loading="lazy"><div><h3>海量片源</h3><p>电影、剧集、综艺持续补充，覆盖热门与经典作品。</p></div></article>
+      <article class="feature-card"><img src="https://picsum.photos/seed/ys2191liulanf2/88/88" alt="高清流畅" width="42" height="42" loading="lazy"><div><h3>高清流畅</h3><p>多码率自适应，弱网环境也可尽量保持稳定播放。</p></div></article>
+      <article class="feature-card"><img src="https://picsum.photos/seed/ys2191liulanf3/88/88" alt="每日更新" width="42" height="42" loading="lazy"><div><h3>每日更新</h3><p>新片与连载更新会及时出现在首页与更新列表中。</p></div></article>
+      <article class="feature-card"><img src="https://picsum.photos/seed/ys2191liulanf4/88/88" alt="多端支持" width="42" height="42" loading="lazy"><div><h3>多端支持</h3><p>手机、平板、电脑浏览器均可访问，布局自适应。</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="contact" aria-label="联系方式">
+  <div class="container">
+    <div class="section-title"><h2>联系我们</h2><p>服务时间与反馈渠道</p></div>
+    <div class="contact-box">
+      <h3>91浏览器 客服与办公信息</h3>
+      <p>服务电话：033-8343-7343</p>
+      <p>电子邮箱：kefu@cs.platform.com</p>
+      <p>办公地址：成都市高新区传媒大厦123层</p>
+      <p>服务时间：每日 9:00-22:00</p>
+      <p>反馈时请尽量说明设备、浏览器版本与问题截图，便于我们更快处理。</p>
+    </div>
+  </div>
+</section>
+
+<section id="faq" aria-label="常见问题">
+  <div class="container">
+    <div class="section-title"><h2>常见问题</h2><p>关于91浏览器的注册、开户、到账与售后</p></div>
+    <div class="faq-list"><div class="faq-item"><div class="faq-q">91浏览器注册问题 <span>+</span></div><div class="faq-a">使用91浏览器时，大部分内容可直接在线观看，无需强制注册。若需要收藏影片、同步观看进度或使用多端记录功能，可通过手机号或常用邮箱完成快速注册，流程简短，一般一分钟内即可完成。</div></div>
+<div class="faq-item"><div class="faq-q">91浏览器开户问题 <span>+</span></div><div class="faq-a">91浏览器开户问题说明：普通用户无需开户即可使用基础播放功能。仅在开通付费权益时需要完成账号绑定，过程透明可查。</div></div>
+<div class="faq-item"><div class="faq-q">到账相关问题 <span>+</span></div><div class="faq-a">若您已提交充值或开通申请但权益未到账，请先等待 3–5 分钟并刷新页面。仍未生效时，请保留订单号，通过下方联系方式反馈，我们会优先核查处理。</div></div>
+<div class="faq-item"><div class="faq-q">91浏览器售后服务 <span>+</span></div><div class="faq-a">91浏览器售后：支持播放问题排查与账号协助。建议在反馈时附上截图与发生时间，处理效率会更高。</div></div>
+<div class="faq-item"><div class="faq-q">支持哪些设备观看？ <span>+</span></div><div class="faq-a">本站采用响应式设计，手机、平板与电脑浏览器均可访问。建议使用较新版本的 Chrome、Safari 或系统自带浏览器，以获得更稳定的播放体验。</div></div>
+</div>
+  </div>
+</section>
+
+<section id="cta" aria-label="行动号召">
+  <div class="container">
+    <h2>打开即看，海量高清影视</h2>
+    <p>海量免费视频影视，轻松找到你喜欢的影片 支持手机与电脑，片源持续补充。</p>
+    <a href="#hot" class="btn btn-play">进入热播列表</a>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="container">
+    <p><strong>91浏览器</strong></p>
+    <p>海量免费视频影视，轻松找到你喜欢的影片</p>
+    <p>电话 033-8343-7343 · 邮箱 kefu@cs.platform.com</p>
+    <p>© 2026 91浏览器 · 粤ICP备73661430号</p>
+    <p>仅供学习交流，请勿用于商业用途</p>
+  </div>
+</footer>
+<script>
+document.querySelectorAll('.faq-q').forEach(function(q){
+  q.addEventListener('click',function(){q.parentElement.classList.toggle('open');});
+});
+</script>
+</body>
+</html>
